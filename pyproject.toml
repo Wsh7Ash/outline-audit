@@ -1,0 +1,21 @@
+[project]
+name = "outline-audit"
+version = "0.1.0"
+description = "HTML and Markdown heading outline auditor with nine validation rules"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+outline-audit = "outline_audit.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
